@@ -1,0 +1,441 @@
+/* For All Pages */
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mlra-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mlra-logo a img {
+  width: 15vw;
+}
+.mlra-web-developer {
+  font-size: 0.7rem;
+}
+header {
+  background-color: white;
+  position: fixed;
+  box-shadow: 2px 2px 39px 5px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 2px 2px 39px 5px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 2px 2px 39px 5px rgba(0, 0, 0, 0.36);
+  z-index: 1;
+  width: 100vw;
+}
+header nav {
+  text-align: center;
+}
+nav ul {
+  padding-left: 0;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+nav ul li a:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20vh;
+  gap: 1vh;
+}
+/* Index page */
+.profile-picture {
+  text-align: center;
+  margin-top: 5vh;
+}
+.profile-picture .picture-frame img {
+  width: 50vw;
+}
+.hero {
+  text-align: center;
+  font-family: cursive;
+  padding: 0 2px;
+}
+/* Resume page */
+.resume-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.competence {
+  width: 85vw;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 30vh;
+}
+.competence ul {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
+.skills-container {
+  width: 100%;
+  background-color: #ddd;
+}
+.skills {
+  color: white;
+  text-align: right;
+}
+.maquetage {
+  width: 100%;
+  background-color: #000000;
+}
+.html {
+  width: 90%;
+  background-color: black;
+}
+.css {
+  width: 80%;
+  background-color: black;
+}
+.integrate {
+  width: 99%;
+  background-color: black;
+}
+.experience {
+  width: 85vw;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 30vh;
+}
+.experience ul {
+  padding-left: 0px;
+}
+.experience ul li {
+  display: block;
+  line-height: 4.5vh;
+}
+.experience ul li a {
+  color: black;
+  padding: 0;
+  font-size: 0.6rem;
+}
+.formation {
+  width: 85vw;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 30vh;
+}
+.formation ul {
+  padding-left: 0px;
+}
+.formation ul li {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+/* Project page */
+.project-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.project {
+  width: 85vw;
+  height: 15.5vh;
+}
+.project a #img-project {
+  width: 85vw;
+  height: 15.5vh;
+}
+.overlay {
+  position: absolute;
+  top: 7vh;
+  width: 85vw;
+  height: 16vh;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.3rem;
+}
+.project:hover .overlay {
+  display: none;
+}
+.projectUnderConstruction h2 {
+  color: white;
+  font-size: xx-small;
+}
+.projectUnderConstruction {
+  background-image: url("/assets/medias/images/thisProjectUnderConstruct.png");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: initial !important;
+}
+/* About page */
+.about-layer{
+  display: flex;
+  flex-direction: column;
+}
+.picture{
+  width: 89vw;
+  height:25vh;
+  margin: 0 auto;
+}
+#picture-frame {
+  background-image: url('/assets/medias/images/reading.jpeg');
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.aboutme{
+  text-align: center;
+}
+.aboutme p{
+  text-indent: 4vw;
+  text-align: justify;
+  font-size: 0.5rem;
+  padding:2vw;
+}
+/* Contact page */
+.contact-call-to-action a{
+text-decoration: none;
+}
+.contact-call-to-action{
+  height: 60vh;
+  margin-top: 6.9vh;
+}
+.my-contact{
+  display: inline;
+  text-align: center;
+}
+/* For All Pages */
+.call-to-action {
+  text-align: center;
+}
+#text-pop {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: black;
+  margin-top: 0;
+}
+#whatsapp:hover + #text-pop {
+  opacity: 1;
+}
+.horizontal-line {
+  opacity: 0.3;
+}
+footer {
+  font-size: 5vw;
+  text-align: center;
+}
+
+
+
+
+/* *****************************
+ * MEDIA FROM MOBIL TO DESKTOP * 
+ *******************************/
+@media (min-width: 550px) {
+  /* For All Pages */
+  .mlra-logo {
+    display: flex;
+  }
+  .mlra-logo a img {
+    width: 3.4vw;
+  }
+  .mlra-web-developer {
+    font-size: initial;
+  }
+  header {
+    display: flex;
+    align-items: center;
+  }
+  header nav {
+    flex: 0.98;
+  }
+  header nav ul {
+    text-align: right;
+  }
+  nav ul li a {
+    padding: 3.7vh 0.5vw;
+    display: inline-block;
+  }
+  nav ul li a:hover {
+    background-color: black;
+    color: white;
+  }
+  nav ul li a:hover {
+    border: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 20vh 20vh;
+  }
+  /* Index page */
+  .profile-picture {
+    grid-area: 1/1/2/2;
+  }
+  .profile-picture .picture-frame img {
+    width: 25vw;
+  }
+  .hero {
+    grid-area: 1/2/2/3;
+  }
+  .call-to-action {
+    grid-area: 2/1/3/3;
+  }
+  /* Resume page */
+  .my-resume {
+    grid-area: 1/1/2/3;
+    text-align: center;
+    margin-top: -40vh;
+  }
+  .resume-items {
+    grid-area: 1/1/2/3;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin-top: 40vh;
+    padding: 0 1vw;
+  }
+  .experience {
+    height: auto;
+  }
+  .experience ul li a {
+    color: black;
+    padding: 0;
+    background-color: white;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .experience ul li a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+  }
+  .formation {
+    height: auto;
+  }
+  .formation ul li {
+    line-height: 6vh;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  /* Project page */
+  .my-project {
+    grid-area: 1/1/2/3;
+    text-align: center;
+    margin-top: -40vh;
+  }
+  .project-items {
+    grid-area: 1/1/2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin-top: 30vh;
+  }
+  .project {
+    width: 30vw;
+    height: 30vh;
+  }
+  .project a #img-project {
+    width: 30vw;
+    height: 30vh;
+  }
+  .overlay {
+    position: absolute;
+    top: 4vh;
+    width: 30vw;
+    height: 30vh;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.3rem;
+  }
+  /* About page */
+  .my-about {
+    grid-area: 1/1/2/3;
+    text-align: center;
+    margin-top: -40vh;
+  }
+  .about-layer{
+    grid-area: 1/1/2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+    margin-top:-20vh;
+    height:0;
+  }
+  .picture{
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    left:5vw;
+  }
+  #picture-frame {
+    background-image: url('/assets/medias/images/reading.jpeg');
+  }
+  .aboutme p{
+    font-size: 1rem;
+  }
+  .aboutme{
+    font-size: 1rem;
+    position: relative;
+    right:3vw;
+    margin-top: -5vh;
+  }
+/* Contact page */
+.my-contact{
+  grid-area: 1/1/2/3;
+  text-align: center;
+  margin-top: -40vh;
+}
+.contact-call-to-action{
+  height: 60vh;
+  margin-top: 6.9vh;
+  grid-area: 2/1/2/3;
+  display: flex;
+  justify-content:center;
+  gap: 6vw;
+}
+  /* For All Pages */
+  .call-to-action {
+    grid-area: 2/1/3/3;
+    margin-top: 20vh;
+  }
+  footer {
+    margin-top: 18vh;
+    grid-area: 3/1/4/3;
+    font-size: 1.5vw;
+  }
+  footer #tiktok a,
+  #linkedin a,
+  #github a {
+    text-decoration: none;
+  }
+}
