@@ -182,7 +182,7 @@ nav ul li a:hover {
   font-size: xx-small;
 }
 .projectUnderConstruction {
-  background-image: url("/assets/medias/images/thisProjectUnderConstruct.png");
+  background-image: url("../medias/images/thisProjectUnderConstruct.png");
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -200,7 +200,7 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 #picture-frame {
-  background-image: url('/assets/medias/images/reading.jpeg');
+  background-image: url('../medias/images/reading.jpeg');
   background-size:contain;
   background-repeat: no-repeat;
 }
@@ -398,7 +398,7 @@ footer {
     left:5vw;
   }
   #picture-frame {
-    background-image: url('/assets/medias/images/reading.jpeg');
+    background-image: url('../medias/images/reading.jpeg');
   }
   .aboutme p{
     font-size: 1rem;
