@@ -1,83 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>MLRA Web Developer</title>
-    <link rel="shortcut icon" href="assets/medias/images/android-icon-192x192.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animation.css">
+  <title>MLRA Web Developer</title>
+  <link rel="shortcut icon" href="assets/medias/images/android-icon-192x192.png" type="image/x-icon">
+ 
+  <style>
+   
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="mlra-logo">
-            <a href="index.html">
-                <img src="assets/medias/images/mlra.jpg" alt="mlra">
-            </a>
-            <span class="mlra-web-developer">MLRA Web Developer</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">A hero</a></li>
-                <li><a href="pages/resume.html">Resume</a></li>
-                <li><a href="pages/project.html">Project</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <!-- section:profile-photo -->
-        <section class="profile-picture">
-            <div class="picture-frame box-shadow">
-                <img class="black-and-white" src="assets/medias/images/mlra.jpg" alt="Photo du dev">
-                <div class="image-caption">
-                    <h1 class="auto-appear">Hello world, I am a full-stack web developer.</h1>
-                </div>
-            </div>
-        </section>
-        <!-- section:call-to-action -->
-        <section class="call-to-action">
-            <a href="https://wa.me/+24162064480" target="_blank" id="whatsapp">
-                <img src="assets/medias/images/whatsapp-svgrepo-com.svg" width="30" alt="WhatsApp">
-            </a>
-            <p id="text-pop">Interesting, I WhatsApp him!</p>
-        </section>
-        <!-- section:about -->
-        <section class="hero">
-            <h2>
-                A hero
-            </h2>
-            <div class="presentation-text">
-                <p class="auto-appear text-about">
-                    I am MOUWENDZI LEGANDZA RICK AXEL (MLRA), a professional
-                    passionate about web developement.
-                </p>
-                <p class="auto-appear text-about">
-                    As a web developer, I am ready to turn your ideas into real web solutions. See an exemple here<a
-                        href="pages/project.html" title="link to the site">:all my project</a>.
-                </p>
-            </div>
-        </section>
-        <!-- footer -->
-        <footer>
-             <!-- horizontal line -->
-            <hr class="horizontal-line">
-            <div class="index-followme">
-                <div class="copywrite">
-                    <span>&copy;</span>
-                    <span class="owner">MLRA, web developer. Follow me on</span>
-                </div>
-                <span id="tiktok">
-                    <a href="https://www.tiktok.com/@jesuiscodeur?_t=8j9QwGQJ6tJ&_r=1" target="_blank"><img src="assets/medias/images/tiktok-logo-logo-svgrepo-com.svg" width="20" title="tiktok" alt="tiktok"></a>
-                </span>
-                <span id="linkedin">
-                    <a href="https://www.linkedin.com/in/rick-axel-mouwendzi-legandza-645640164/" target="_blank"><img src="assets/medias/images/linkedin-rounded-svgrepo-com.svg" width="20" title="linkedin" alt="linkedin"></a>
-                </span>
-                <span id="github">
-                    <a href="https://github.com/MLRAleader" target="_blank"><img src="assets/medias/images/github-rounded-svgrepo-com.svg" width="20" title="github" alt="github"></a>
-                </span>
-            </div>
-        </footer>
+  <header>
+    <div class="mlra-logo">
+      <a href="index.html">
+        <img src="assets/medias/images/mlra.jpg" alt="mlra">
+      </a>
+      <span class="mlra-web-developer"> Html5, Css3, JavaScript dev</span>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#index">Home</a></li>
+        <!-- <li><a href="#resume">Skills&Services</a></li>
+        <li><a href="#project">Project</a></li> -->
+        <!-- <li><a href="#about">Testimony</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </nav>
+    
+  </header>
+
+  <div class="container">
+    <section id="index" class="flip-in-hor-bottom home">
+      <div class="presentation-text">
+        <span class="hello" id="auto-typed-text1">
+          <!-- Hello world ! -->
+        </span>
+        <span>
+          <p>I'm MLRA</p>
+          <p>
+            <spans class="stack" id="auto-typed-text2"> <!--ReactJs & NodeJs--> </spans>
+          </p>
+          <!-- <p id="auto-typed-text3">full stack developer</p> -->
+        </span>
+      </div>
+      <div class="profile-photo">
+        <img id="image-profile" src="assets/medias/images/index-profil2.jpg"  alt="image profile" style="cursor: pointer;">
+      </div>
+      <div class="hire-me">
+        <button class="heartbeat btn-hire-me "><a href="#">I am ready !</a></button>
+      </div>
+      <div class="rs-link">
+        <span><a href="https://wa.me/+24162064480" target="_blank"><img src="assets/medias/images/whatsapp-svgrepo-com.svg" alt="whatsapp"
+              title="My whatsapp"></a></span>
+        <!-- <span><a href="https://www.linkedin.com/in/rick-axel-mouwendzi-legandza-645640164/" target="_blank"><img src="assets/medias/images/linkedin-rounded-svgrepo-com.svg" alt="linkedin"
+              title="My linkedin"></a></span> -->
+        <span><a href="https://github.com/MLRAleader" target="_blank"><img src="assets/medias/images/github-rounded-svgrepo-com.svg" alt="github"
+              title="My github"></a></span>
+        <span><a href="https://www.tiktok.com/@jesuiscodeur?_t=8j9QwGQJ6tJ&_r=1" target="_blank"><img src="assets/medias/images/tiktok-logo-logo-svgrepo-com.svg" alt="tiktok"
+              title="My tiktok"></a></span>
+      </div>
+    </section>
+
+    <section id="resume" class="hidden flip-in-hor-bottom">
+      <h1 class="my-resume">My Resume</h1>
+      <div class="resume-items">
+        <!-- section:competence -->
+        <section class="competence">
+          <h2>My Skills</h2>
+          <ul>
+            <li>
+              MAQUETAGE
+              <div class="skills-container">
+                <div class="skills maquetage">100%</div>
+              </div>
+            </li>
+            <li>
+              HTML
+              <div class="skills-container">
+                <div class="skills html">90%</div>
+              </div>
+            </li>
+            <li>
+              CSS
+              <div class="skills-container">
+                <div class="skills css">80%</div>
+              </div>
+            </li>
+            <li>
+              INTEGRATION
+              <div class="skills-container">
+                <div class="skills integrate">99%</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- section:experience -->
+        <section class="experience">
+          <h2>Experience </h2>
+          <ul>
+            <li><a href="https://mlraleader.github.io/myportfolio/" target="_blank" title="Link to my portfolio">Project
+                1:My
+                portfolio (HTML & CSS)</a></li>
+            <li><a href="#">Project 2:The calculator interface</a></li>
+            <li><a href="#">Project 3: Is in development</a></li>
+            <li><a href="#">Project 4: Is in development</a></li>
+            <li><a href="#">Project 5: Is in development</a></li>
+          </ul>
+        </section>
+        <!-- section:training -->
+        <section class="formation">
+          <h2>Formations</h2>
+          <ul>
+            <li>DEC in computer technology (2014-2017)</li>
+            <li>Web profession training certificate(2019-2020)</li>
+            <li>Emerging Technology Training Certificate(2019-2020)</li>
+            <li>Appbrewery Web Development Bootcamp (2023-2024)</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section id="project" class="hidden flip-in-hor-bottom">
+      <h1 class="my-project">My Projects</h1>
+      <!-- section:competence -->
+      <div class="project-items">
+        <section class="project">
+          <a href="https://mlraleader.github.io/mlra" target="_blank">
+            <img src="../assets/medias/images/myportfolio.png" alt="My portfolio" id="img-project">
+          </a>
+          <div class="overlay">
+            <h2>
+              This is my portfolio coded just with HTML and CSS. Hover over the
+              black box to discover what is hidden behind it
+            </h2>
+          </div>
+        </section>
+        <section class="project">
+          <a href="https://mlraleader.github.io/whatsappChallenge/" target="_blank">
+            <img src="../assets/medias/images/challengeWhatsapp.png" alt="WhatsApp interface" id="img-project">
+          </a>
+          <div class="overlay">
+            <h2>
+              A friend tested me on redoing the WhatsApp web interface, just with html and css. I did my best.
+            </h2>
+          </div>
+        </section>
+        <section class="project projectUnderConstruction">
+          <h2>Project 3</h2>
+        </section>
+        <section class="project projectUnderConstruction">
+          <h2>Project 4</h2>
+        </section>
+        <section class="project projectUnderConstruction">
+          <h2>Project 5</h2>
+        </section>
+        <section class="project projectUnderConstruction">
+          <h2>Project 6</h2>
+        </section>
+      </div>
+    </section>
+
+    <section id="about" class="hidden flip-in-hor-bottom">
+      <h1 class="my-about">About Me</h1>
+      <!-- section:competence -->
+      <section class="about-layer">
+        <div class="picture" id="picture-frame">
+        </div>
+        <div class="aboutme">
+          <p>
+            I am MOUWENDZI LEGANDZA RICK AXEL (MLRA), I am a full-stack web developer.
+          </p>
+          <p>
+            I like activities that involve creativity, such as web development. And to create for the web, I use <span
+              class="stack">HTML5</span>,<span class="stack">CSS3</span>, <span class="stack">BOOTSTRAP</span>,<span
+              class="stack">JQUERY</span>, <span class="stack">JAVASCRIPT</span>, <span class="stack">REACTJS</span> AND
+            <span class="stack">NODEJS</span>.
+          </p>
+          <p>
+            I'm the type of person who only speaks when breaking the silence is necessary. I enjoy teamwork, a skill
+            that
+            I developed during my time at school 241.
+          </p>
+          <p>
+            I am also the type of person who feels very alive when he shares valuable knowledge with others in simple
+            words, to make it easier for them to understand. One of my faults is that I like to make things easier.
+            Definitely one of the reasons that made me love programming.
+          </p>
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section id="contact" class="hidden flip-in-hor-bottom">
+      <h1 class="my-contact">My Contacts</h1>
+      <!-- section:call-to-action -->
+      <section class="contact-call-to-action">
+        <a href="https://wa.me/+24162064480" target="_blank">
+          <img src="../assets/medias/images/whatsapp-svgrepo-com.svg" width="30" title="WhatsApp:+241 62 06 44 80"
+            alt="WhatsApp">
+        </a>
+        <a href="https://www.tiktok.com/@jesuiscodeur?_t=8j9QwGQJ6tJ&_r=1" target="_blank">
+          <img src="../assets/medias/images/tiktok-logo-logo-svgrepo-com.svg" width="30" title="TikTok:LaCodeine"
+            alt="tiktok">
+        </a>
+        <a href="mailto:mouwenlegan@gmail.com?subject=Demande de service&body=Bonjour, j'aimerais avoir vos services."
+          target="_blank">
+          <img src="../assets/medias/images/gmail-svgrepo-com.svg" alt="gmail" title="Gmail:mouwenlegan@gmail.com"
+            width="30">
+        </a>
+      </section>
+    </section>
+
+  </div>
+
+  <script src="assets/js/script.js"></script>
+  <!-- <script src="assets/js/audioPlay.js"></script> -->
+  <script src="assets/js/autoTypeTxt.js"></script>
+  
 </body>
+
 </html>
