@@ -1,4 +1,7 @@
 /* For All Pages */
+html{
+  background-color:black;
+}
 * {
   margin: 0;
 }
@@ -17,6 +20,8 @@ body {
 }
 .mlra-web-developer {
   font-size: 0.7rem;
+  font-family: cursive
+  
 }
 header {
   background-color: white;
@@ -29,6 +34,7 @@ header {
 }
 header nav {
   text-align: center;
+  width: 92vw;
 }
 nav ul {
   padding-left: 0;
@@ -44,36 +50,97 @@ nav ul li a {
 }
 nav ul li a:hover {
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  top: 20vh;
-  gap: 1vh;
+.hidden{
+  display: none;
 }
-/* Index page */
-.profile-picture {
-  text-align: center;
-  margin-top: 5vh;
+
+/* Index section */
+.home{
+  height:60vh;
+  position:relative;
+  top:20vh;
+  display:flex;
+  flex-direction:column;
+  gap: 11px;
 }
-.profile-picture .picture-frame img {
-  width: 50vw;
+.home .presentation-text{
+   text-align:center;
+   color:white;
 }
-.hero {
-  text-align: center;
+.stack{
+  font-size:1.3rem;
   font-family: cursive;
-  padding: 0 2px;
 }
-/* Resume page */
+.hello{
+  font-size:1rem;
+  color:white;
+}
+.profile-photo{
+  text-align: center;
+}
+.profile-photo img#image-profile{
+width: 90vw;
+position: relative;
+top:0vh;
+}
+.hire-me{
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn-hire-me{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.5lh;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  top:2vh;
+}
+.btn-hire-me a{
+  text-decoration: none;
+  color: black;
+}
+.btn-hire-me:hover{
+  background-color: greenyellow;
+  cursor: pointer;
+   a{
+    color: white;
+  }
+}
+
+.rs-link{
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  position: relative;
+  top: -10vh;
+}
+.rs-link span img{
+  width: 10vw;
+}
+/* Resume section*/
+.my-resume{
+  text-align: center;
+  color: white;
+  position:relative;
+  top: 14vh;
+}
 .resume-items {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2vh;
+  position:relative;
+  top: 17vh;
+  right: 0px;
+  left: 0px;
 }
 .competence {
+  background-color: #ddd;
   width: 85vw;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -89,29 +156,30 @@ nav ul li a:hover {
 }
 .skills-container {
   width: 100%;
-  background-color: #ddd;
+  background-color: black;
 }
 .skills {
-  color: white;
+  color: black;
   text-align: right;
 }
 .maquetage {
   width: 100%;
-  background-color: #000000;
+  background-color: white;
 }
 .html {
   width: 90%;
-  background-color: black;
+  background-color: white
 }
 .css {
   width: 80%;
-  background-color: black;
+  background-color: white
 }
 .integrate {
   width: 99%;
-  background-color: black;
+  background-color: white
 }
 .experience {
+  background-color: #ddd;
   width: 85vw;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -132,6 +200,7 @@ nav ul li a:hover {
   font-size: 0.6rem;
 }
 .formation {
+  background-color: #ddd;
   width: 85vw;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -147,11 +216,22 @@ nav ul li a:hover {
   font-size: 0.6rem;
   font-weight: bold;
 }
-/* Project page */
+/* Project section */
+.my-project{
+  text-align: center;
+  color: white;
+  position:relative;
+  top: 14vh;
+}
 .project-items {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  align-items: center;
+  gap: 2vh;
+  position:relative;
+  top: 16vh;
+  right: 0px;
+  left: 0px;
 }
 .project {
   width: 85vw;
@@ -160,22 +240,6 @@ nav ul li a:hover {
 .project a #img-project {
   width: 85vw;
   height: 15.5vh;
-}
-.overlay {
-  position: absolute;
-  top: 7vh;
-  width: 85vw;
-  height: 16vh;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 0.3rem;
-}
-.project:hover .overlay {
-  display: none;
 }
 .projectUnderConstruction h2 {
   color: white;
@@ -189,15 +253,29 @@ nav ul li a:hover {
   background-size: cover;
   cursor: initial !important;
 }
-/* About page */
+.overlay {
+ display: none;
+}
+/* About section */
+.my-about{
+  text-align: center;
+  color: white;
+  position:relative;
+  top: 14vh;
+}
 .about-layer{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position:relative;
+  top: 16vh;
+  right: 0px;
+  left: 0px;
 }
 .picture{
   width: 89vw;
-  height:25vh;
   margin: 0 auto;
+  height: 137px;
 }
 #picture-frame {
   background-image: url('../medias/images/reading.jpeg');
@@ -206,6 +284,7 @@ nav ul li a:hover {
 }
 .aboutme{
   text-align: center;
+  color: white;
 }
 .aboutme p{
   text-indent: 4vw;
@@ -213,47 +292,32 @@ nav ul li a:hover {
   font-size: 0.5rem;
   padding:2vw;
 }
-/* Contact page */
-.contact-call-to-action a{
-text-decoration: none;
-}
-.contact-call-to-action{
-  height: 60vh;
-  margin-top: 6.9vh;
-}
+/* Contact section*/
 .my-contact{
-  display: inline;
+  color: white;
+  position:relative;
+  top: 14vh;
   text-align: center;
 }
-/* For All Pages */
-.call-to-action {
-  text-align: center;
+.contact-call-to-action a{
+  text-decoration: none;
+  }
+.contact-call-to-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    gap: 5vh;
+    top: 16vh;
+    right: 0px;
+    left: 0px;
 }
-#text-pop {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  color: black;
-  margin-top: 0;
-}
-#whatsapp:hover + #text-pop {
-  opacity: 1;
-}
-.horizontal-line {
-  opacity: 0.3;
-}
-footer {
-  font-size: 5vw;
-  text-align: center;
-}
-
-
-
-
 /* *****************************
  * MEDIA FROM MOBIL TO DESKTOP * 
  *******************************/
+ /* For All Pages */
 @media (min-width: 550px) {
-  /* For All Pages */
+  
   .mlra-logo {
     display: flex;
   }
@@ -261,14 +325,14 @@ footer {
     width: 3.4vw;
   }
   .mlra-web-developer {
-    font-size: initial;
+    font-size: 1.5rem;
   }
   header {
     display: flex;
     align-items: center;
   }
   header nav {
-    flex: 0.98;
+    flex: 0.99;
   }
   header nav ul {
     text-align: right;
@@ -284,158 +348,125 @@ footer {
   nav ul li a:hover {
     border: none;
   }
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40vh 20vh 20vh;
-  }
-  /* Index page */
-  .profile-picture {
-    grid-area: 1/1/2/2;
-  }
-  .profile-picture .picture-frame img {
-    width: 25vw;
-  }
-  .hero {
-    grid-area: 1/2/2/3;
-  }
-  .call-to-action {
-    grid-area: 2/1/3/3;
-  }
-  /* Resume page */
-  .my-resume {
-    grid-area: 1/1/2/3;
-    text-align: center;
-    margin-top: -40vh;
-  }
-  .resume-items {
-    grid-area: 1/1/2/3;
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-    margin-top: 40vh;
-    padding: 0 1vw;
-  }
-  .experience {
-    height: auto;
-  }
-  .experience ul li a {
-    color: black;
-    padding: 0;
-    background-color: white;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-  .experience ul li a:hover {
-    background-color: black;
-    color: white;
-    font-weight: bolder;
-  }
-  .formation {
-    height: auto;
-  }
-  .formation ul li {
-    line-height: 6vh;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  /* Project page */
-  .my-project {
-    grid-area: 1/1/2/3;
-    text-align: center;
-    margin-top: -40vh;
-  }
-  .project-items {
-    grid-area: 1/1/2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1vw;
-    margin-top: 30vh;
-  }
-  .project {
-    width: 30vw;
-    height: 30vh;
-  }
-  .project a #img-project {
-    width: 30vw;
-    height: 30vh;
-  }
-  .overlay {
-    position: absolute;
-    top: 4vh;
-    width: 30vw;
-    height: 30vh;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 0.3rem;
-  }
-  /* About page */
-  .my-about {
-    grid-area: 1/1/2/3;
-    text-align: center;
-    margin-top: -40vh;
-  }
-  .about-layer{
-    grid-area: 1/1/2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1vw;
-    margin-top:-20vh;
-    height:0;
-  }
-  .picture{
-    width: 100vw;
-    height: 50vh;
-    position: relative;
-    left:5vw;
-  }
-  #picture-frame {
-    background-image: url('../medias/images/reading.jpeg');
-  }
-  .aboutme p{
-    font-size: 1rem;
-  }
-  .aboutme{
-    font-size: 1rem;
-    position: relative;
-    right:3vw;
-    margin-top: -5vh;
-  }
-/* Contact page */
-.my-contact{
-  grid-area: 1/1/2/3;
+/*Index section*/
+.home{
+  position: absolute;
+  top:25vh;
+  position: fixed;
+  display: grid;
+ grid-template-columns: 2fr 1fr; 
+ grid-template-rows: 30vh 30vh 30vh;
+ /* overflow-y:hidden; */
+ /* position: relative;*/
+}
+.profile-photo{
+  position: relative;
+  top: -12vh;
+  left: -1%;
+  /* border: 3px solid red; */
+  grid-area: 1/1/3/2;
+  width: 49vw;
+  height: 100vh;
+  /* margin-top: -5vh; */
+  /* overflow: hidden; */
+}
+.profile-photo img#image-profile{
+  width: 90%;
+  height: auto;
+  position: relative;
+  top:-8vh;
+  /* object-fit: cover; */
+/* border: 3px solid greenyellow; */
+}
+.hire-me{
+  grid-area: 2/3/4/2;
+  /* position: absolute; */
+  margin-left: -0.5vw;
+  margin-top: 118px;
+}
+.btn-hire-me{
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5lh;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+}
+/* .btn-hire-me:hover a{
+  background-color: greenyellow;
+  cursor: pointer;
+  color: white;
+}
+.btn-hire-me a{
+  text-decoration: none;
+  color: black;
+} */
+.rs-link{
+  grid-area: 3/2/4/5;
+  top:0px;
+  bottom: 0px;
+}
+.rs-link span img{
+  width: 4vw;
+}
+
+.presentation-text{
+  grid-area: 1/2/3/3;
+  width: 45vw;
+  height: 0px;
+  z-index: 1;
+}
+.hello{
+  font-size: 2rem;
+  
+}
+.presentation-text span p{
+  font-size: 3rem;
   text-align: center;
-  margin-top: -40vh;
 }
-.contact-call-to-action{
-  height: 60vh;
-  margin-top: 6.9vh;
-  grid-area: 2/1/2/3;
+.presentation-text .stack{
+  font-size: 1lh;
+  /* display: flex; */
+}
+/* Resume page */
+.resume-items {
+ display: flex;
+ flex-direction: row;
+}
+.experience {
+  height: auto;
+}
+.experience ul li a {
+  color: black;
+  padding: 0;
+  background-color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.experience ul li a:hover {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+.formation {
+  height: auto;
+}
+.formation ul li {
+  line-height: 6vh;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+ /* Contact page*/
+ .contact-call-to-action{
   display: flex;
-  justify-content:center;
-  gap: 6vw;
+  flex-direction: row;
+ justify-content: center;
+  position:relative;
+  gap: 5vh;
+  top: 40vh;
+  right: 0px;
+  left: 0px;
 }
-  /* For All Pages */
-  .call-to-action {
-    grid-area: 2/1/3/3;
-    margin-top: 20vh;
-  }
-  footer {
-    margin-top: 18vh;
-    grid-area: 3/1/4/3;
-    font-size: 1.5vw;
-  }
-  footer #tiktok a,
-  #linkedin a,
-  #github a {
-    text-decoration: none;
-  }
 }
