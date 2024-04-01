@@ -1,0 +1,472 @@
+/* For All Pages */
+html{
+  background-color:black;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mlra-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mlra-logo a img {
+  width: 15vw;
+}
+.mlra-web-developer {
+  font-size: 0.7rem;
+  font-family: cursive
+  
+}
+header {
+  background-color: white;
+  position: fixed;
+  box-shadow: 2px 2px 39px 5px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 2px 2px 39px 5px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 2px 2px 39px 5px rgba(0, 0, 0, 0.36);
+  z-index: 1;
+  width: 100vw;
+}
+header nav {
+  text-align: center;
+  width: 92vw;
+}
+nav ul {
+  padding-left: 0;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+nav ul li a:hover {
+  border-top: 1px solid black;
+}
+.hidden{
+  display: none;
+}
+
+/* Index section */
+.home{
+  height:60vh;
+  position:relative;
+  top:20vh;
+  display:flex;
+  flex-direction:column;
+  gap: 11px;
+}
+.home .presentation-text{
+   text-align:center;
+   color:white;
+}
+.stack{
+  font-size:1.3rem;
+  font-family: cursive;
+}
+.hello{
+  font-size:1rem;
+  color:white;
+}
+.profile-photo{
+  text-align: center;
+}
+.profile-photo img#image-profile{
+width: 90vw;
+position: relative;
+top:0vh;
+}
+.hire-me{
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn-hire-me{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.5lh;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  top:2vh;
+}
+.btn-hire-me a{
+  text-decoration: none;
+  color: black;
+}
+.btn-hire-me:hover{
+  background-color: greenyellow;
+  cursor: pointer;
+   a{
+    color: white;
+  }
+}
+
+.rs-link{
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  position: relative;
+  top: -10vh;
+}
+.rs-link span img{
+  width: 10vw;
+}
+/* Resume section*/
+.my-resume{
+  text-align: center;
+  color: white;
+  position:relative;
+  top: 14vh;
+}
+.resume-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  position:relative;
+  top: 17vh;
+  right: 0px;
+  left: 0px;
+}
+.competence {
+  background-color: #ddd;
+  width: 85vw;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 30vh;
+}
+.competence ul {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
+.skills-container {
+  width: 100%;
+  background-color: black;
+}
+.skills {
+  color: black;
+  text-align: right;
+}
+.maquetage {
+  width: 100%;
+  background-color: white;
+}
+.html {
+  width: 90%;
+  background-color: white
+}
+.css {
+  width: 80%;
+  background-color: white
+}
+.integrate {
+  width: 99%;
+  background-color: white
+}
+.experience {
+  background-color: #ddd;
+  width: 85vw;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 30vh;
+}
+.experience ul {
+  padding-left: 0px;
+}
+.experience ul li {
+  display: block;
+  line-height: 4.5vh;
+}
+.experience ul li a {
+  color: black;
+  padding: 0;
+  font-size: 0.6rem;
+}
+.formation {
+  background-color: #ddd;
+  width: 85vw;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 30vh;
+}
+.formation ul {
+  padding-left: 0px;
+}
+.formation ul li {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+/* Project section */
+.my-project{
+  text-align: center;
+  color: white;
+  position:relative;
+  top: 14vh;
+}
+.project-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  position:relative;
+  top: 16vh;
+  right: 0px;
+  left: 0px;
+}
+.project {
+  width: 85vw;
+  height: 15.5vh;
+}
+.project a #img-project {
+  width: 85vw;
+  height: 15.5vh;
+}
+.projectUnderConstruction h2 {
+  color: white;
+  font-size: xx-small;
+}
+.projectUnderConstruction {
+  background-image: url("../medias/images/thisProjectUnderConstruct.png");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: initial !important;
+}
+.overlay {
+ display: none;
+}
+/* About section */
+.my-about{
+  text-align: center;
+  color: white;
+  position:relative;
+  top: 14vh;
+}
+.about-layer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+  top: 16vh;
+  right: 0px;
+  left: 0px;
+}
+.picture{
+  width: 89vw;
+  margin: 0 auto;
+  height: 137px;
+}
+#picture-frame {
+  background-image: url('../medias/images/reading.jpeg');
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.aboutme{
+  text-align: center;
+  color: white;
+}
+.aboutme p{
+  text-indent: 4vw;
+  text-align: justify;
+  font-size: 0.5rem;
+  padding:2vw;
+}
+/* Contact section*/
+.my-contact{
+  color: white;
+  position:relative;
+  top: 14vh;
+  text-align: center;
+}
+.contact-call-to-action a{
+  text-decoration: none;
+  }
+.contact-call-to-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    gap: 5vh;
+    top: 16vh;
+    right: 0px;
+    left: 0px;
+}
+/* *****************************
+ * MEDIA FROM MOBIL TO DESKTOP * 
+ *******************************/
+ /* For All Pages */
+@media (min-width: 550px) {
+  
+  .mlra-logo {
+    display: flex;
+  }
+  .mlra-logo a img {
+    width: 3.4vw;
+  }
+  .mlra-web-developer {
+    font-size: 1.5rem;
+  }
+  header {
+    display: flex;
+    align-items: center;
+  }
+  header nav {
+    flex: 0.99;
+  }
+  header nav ul {
+    text-align: right;
+  }
+  nav ul li a {
+    padding: 3.7vh 0.5vw;
+    display: inline-block;
+  }
+  nav ul li a:hover {
+    background-color: black;
+    color: white;
+  }
+  nav ul li a:hover {
+    border: none;
+  }
+/*Index section*/
+.home{
+  position: absolute;
+  top:25vh;
+  position: fixed;
+  display: grid;
+ grid-template-columns: 2fr 1fr; 
+ grid-template-rows: 30vh 30vh 30vh;
+ /* overflow-y:hidden; */
+ /* position: relative;*/
+}
+.profile-photo{
+  position: relative;
+  top: -12vh;
+  left: -1%;
+  /* border: 3px solid red; */
+  grid-area: 1/1/3/2;
+  width: 49vw;
+  height: 100vh;
+  /* margin-top: -5vh; */
+  /* overflow: hidden; */
+}
+.profile-photo img#image-profile{
+  width: 90%;
+  height: auto;
+  position: relative;
+  top:-8vh;
+  /* object-fit: cover; */
+/* border: 3px solid greenyellow; */
+}
+.hire-me{
+  grid-area: 2/3/4/2;
+  /* position: absolute; */
+  margin-left: -0.5vw;
+  margin-top: 118px;
+}
+.btn-hire-me{
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5lh;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+}
+/* .btn-hire-me:hover a{
+  background-color: greenyellow;
+  cursor: pointer;
+  color: white;
+}
+.btn-hire-me a{
+  text-decoration: none;
+  color: black;
+} */
+.rs-link{
+  grid-area: 3/2/4/5;
+  top:0px;
+  bottom: 0px;
+}
+.rs-link span img{
+  width: 4vw;
+}
+
+.presentation-text{
+  grid-area: 1/2/3/3;
+  width: 45vw;
+  height: 0px;
+  z-index: 1;
+}
+.hello{
+  font-size: 2rem;
+  
+}
+.presentation-text span p{
+  font-size: 3rem;
+  text-align: center;
+}
+.presentation-text .stack{
+  font-size: 1lh;
+  /* display: flex; */
+}
+/* Resume page */
+.resume-items {
+ display: flex;
+ flex-direction: row;
+}
+.experience {
+  height: auto;
+}
+.experience ul li a {
+  color: black;
+  padding: 0;
+  background-color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.experience ul li a:hover {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+.formation {
+  height: auto;
+}
+.formation ul li {
+  line-height: 6vh;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+ /* Contact page*/
+ .contact-call-to-action{
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+  position:relative;
+  gap: 5vh;
+  top: 40vh;
+  right: 0px;
+  left: 0px;
+}
+}
